@@ -1,4 +1,4 @@
-package petTreatmentManagementSystem.mvc;
+package pet.mvc;
 
 import java.util.List;
 import java.util.Scanner;
@@ -40,7 +40,6 @@ public class ConsoleView {
     }
 
     public void printMedicalRecordInfo(Customer customer, List<MedicalRecord> records) {
-        //List<MedicalRecord> records = customer.getMedicalRecords(); // 수정
         System.out.println("[" + customer.getPetName() + "]'s medical record");
         for (MedicalRecord record : records) {
             System.out.println("- appointment date: " + record.getDate());

@@ -45,12 +45,12 @@ public class CovidScraper {
                 System.out.println(covidStatus);
             }
 
-            // 엑셀 파일로 저장
+            // Save as Excel file
             String excelFileName = "covid_status_" + date.replace(" ", "_").replace(":", "_") + ".xlsx";
             ExcelExporter.exportToExcel(date, covidStatusList, excelFileName);
             System.out.println("Finished exporting as Excel file: " + excelFileName);
 
-            // PDF 파일로 저장
+            // Save as Pdf file
             String pdfFileName = "covid_status_" + date.replace(" ", "_").replace(":", "_") + ".pdf";
             PdfExporter.exportToPdf(date, covidStatusList, pdfFileName);
             System.out.println("Finished exporting as PDF File: " + pdfFileName);

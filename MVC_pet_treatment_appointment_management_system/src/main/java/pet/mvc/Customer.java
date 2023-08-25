@@ -1,4 +1,4 @@
-package petTreatmentManagementSystem.mvc;
+package pet.mvc;
 
 import java.util.ArrayList;
 import java.util.List;

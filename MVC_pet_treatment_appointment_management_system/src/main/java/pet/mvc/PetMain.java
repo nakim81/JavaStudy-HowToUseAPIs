@@ -1,4 +1,4 @@
-package petTreatmentManagementSystem.mvc;
+package pet.mvc;
 
 import java.util.List;
 import java.util.Scanner;
@@ -42,7 +42,7 @@ public class PetMain {
                     MedicalRecord newRecord = view.getMedicalRecordInfo();
                     newRecord.setPhoneNumber(phoneNumber);
                     recordController.addMedicalRecord(newRecord);
-                    //customer.addMedicalRecords(newRecord);
+                    customer.addMedicalRecord(newRecord);
                     view.printMessage("Medical record saved.");
                     break;
 

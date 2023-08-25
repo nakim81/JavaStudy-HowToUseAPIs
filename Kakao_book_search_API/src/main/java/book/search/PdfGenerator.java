@@ -60,7 +60,7 @@ public class PdfGenerator {
             table.addCell(createCell(book.getAuthors(), false));
             table.addCell(createCell(book.getPublisher(), false));
 
-            // 이미지 추가
+            // add image
             try {
                 ImageData imageData = ImageDataFactory.create(book.getThumbnail());
                 Image image = new Image(imageData);

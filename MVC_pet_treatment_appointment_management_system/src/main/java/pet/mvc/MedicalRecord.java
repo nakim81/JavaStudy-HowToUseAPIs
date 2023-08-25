@@ -1,4 +1,4 @@
-package petTreatmentManagementSystem.mvc;
+package pet.mvc;
 
 public class MedicalRecord {
     private String phoneNumber;
